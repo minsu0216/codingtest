@@ -1,4 +1,4 @@
-# 내 답(틀림)
+# 내 답
 N, K = map(int, input().split())
 A = list(map(int, input().split()))
 B = list(map(int, input().split()))
