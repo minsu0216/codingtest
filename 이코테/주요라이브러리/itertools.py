@@ -16,6 +16,6 @@ result3 = list(product(data, repeat=2))
 result4 = list(combinations_with_replacement(data, 2))
 
 print(result1)
-print(result2)
+print(result2) 
 print(result3)
 print(result4)
