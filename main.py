@@ -12,8 +12,8 @@ from itertools import combinations_with_replacement
 data = ['A', 'B']
 result1 = list(permutations(data, 2))
 result2 = list(combinations(data, 2))
-result3 = list(product(data, repeat=2))
-result4 = list(combinations_with_replacement(data, 2))
+result3 = list(product(data, repeat=5))
+result4 = list(combinations_with_replacement(data, 5))
 
 print(result1)
 print(result2) 
