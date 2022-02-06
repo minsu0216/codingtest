@@ -1,29 +1,21 @@
 '''
-deque
-연속적으로 나열된 데이터의 시작 부분이나 끝부분에 데이터를 삽입하거나 삭제할 때 매우 효과적
-시간 복잡도 O(1) / 리스트는 O(N)
-인덱싱, 슬라이싱 등의 기능은 사용할 수 없음
-스택이나 큐의 기능을 모두 포함
-popleft() / pop()
-appendleft(x) / append(x)
+itertools
+반복되는 데이터를 처리하는 기능
+순열, 조합, 중복 순열, 중복 조합
 '''
-from collections import deque
 
-data = deque([2, 3, 4])
-data.appendleft(1)
-data.append(5)
+from itertools import permutations
+from itertools import combinations
+from itertools import product
+from itertools import combinations_with_replacement
 
-print(data)
-print(list(data))
+data = ['A', 'B', 'C']
+result1 = list(permutations(data, 2))
+result2 = list(combinations(data, 2))
+result3 = list(product(data, repeat=2))
+result4 = list(combinations_with_replacement(data, 2))
 
-'''
-Counter
-등장 횟수를 세는 기능 제공
-'''
-from collections import Counter
-
-counter = Counter(['red', 'blue', 'red', 'green', 'blue', 'blue'])
-
-print(counter['blue'])
-print(counter['green'])
-print(counter.values())
+print(result1)
+print(result2) 
+print(result3)
+print(result4)
